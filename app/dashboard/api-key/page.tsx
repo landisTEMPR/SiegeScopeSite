@@ -2,14 +2,14 @@
 
 import { useUser } from '@clerk/nextjs'
 import { useState } from 'react'
-import { Copy, Check, Key, RefreshCw } from 'lucide-react'
+import { Copy, Check, Key } from 'lucide-react'
 import Link from 'next/link'
 
 export default function ApiKeyPage() {
   const { user } = useUser()
   const [copied, setCopied] = useState(false)
 
-  // Generate a simple API key from user ID (in production, use a more secure method)
+  // Generate a simple API key from user ID
   const apiKey = user?.id ? `ss_${Buffer.from(user.id).toString('base64').replace(/=/g, '')}` : ''
 
   const copyToClipboard = () => {
@@ -62,13 +62,13 @@ export default function ApiKeyPage() {
             <ol className="list-decimal list-inside space-y-2">
               <li>Open SiegeScope on your computer</li>
               <li>Go to Settings → Account</li>
-              <li>Paste your API key and click "Activate"</li>
+              <li>Paste your API key and click &quot;Activate&quot;</li>
             </ol>
           </div>
 
           <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
             <p className="text-sm text-yellow-800">
-              <strong>Keep this key secret!</strong> Don't share it with anyone. 
+              <strong>Keep this key secret!</strong> Don&apos;t share it with anyone. 
               If you think your key has been compromised, contact support.
             </p>
           </div>

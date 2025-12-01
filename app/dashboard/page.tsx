@@ -1,7 +1,7 @@
 'use client'
 
 import { useUser, useAuth } from '@clerk/nextjs'
-import { Download, Monitor, Terminal, CheckCircle, FileText, MessageCircle, Lock, Key, Copy, Check } from 'lucide-react'
+import { Download, Monitor, CheckCircle, FileText, MessageCircle, Lock, Key, Copy, Check } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -36,7 +36,12 @@ function LockedState() {
   )
 }
 
-function ApiKeySection({ user }: { user: any }) {
+interface UserType {
+  id: string
+  firstName?: string | null
+}
+
+function ApiKeySection({ user }: { user: UserType | null | undefined }) {
   const [copied, setCopied] = useState(false)
   const [showKey, setShowKey] = useState(false)
 
@@ -91,7 +96,7 @@ function ApiKeySection({ user }: { user: any }) {
 
       <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
         <p className="text-sm text-yellow-800">
-          <strong>Keep this key secret!</strong> Don't share it with anyone. 
+          <strong>Keep this key secret!</strong> Don&apos;t share it with anyone. 
           This key is tied to your subscription and is required to use SiegeScope.
         </p>
       </div>
@@ -99,7 +104,7 @@ function ApiKeySection({ user }: { user: any }) {
   )
 }
 
-function DownloadContent({ user }: { user: any }) {
+function DownloadContent({ user }: { user: UserType | null | undefined }) {
   return (
     <>
       {/* Header */}
@@ -203,7 +208,7 @@ function DownloadContent({ user }: { user: any }) {
 
       {/* Features Reminder */}
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 text-white mb-12">
-        <h2 className="text-xl font-bold mb-6">What's Included</h2>
+        <h2 className="text-xl font-bold mb-6">What&apos;s Included</h2>
         
         <div className="grid md:grid-cols-2 gap-4">
           <div className="flex items-center gap-3">

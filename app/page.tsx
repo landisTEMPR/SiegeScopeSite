@@ -145,7 +145,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Player & Operator Data</h3>
               <p className="text-gray-600">
-                Track performance by player and operator. See who's fragging, who's getting picked first, and operator win rates.
+                Track performance by player and operator. See who&apos;s fragging, who&apos;s getting picked first and operator win rates.
               </p>
             </div>
 
