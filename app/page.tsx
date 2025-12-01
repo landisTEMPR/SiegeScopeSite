@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-12 bg-gray-900 text-white px-4">
+      <section className="py-20 bg-gray-900 text-white px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
             <div className="text-3xl font-bold text-orange-500">10+</div>

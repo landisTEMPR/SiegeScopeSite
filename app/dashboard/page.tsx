@@ -213,10 +213,6 @@ function DownloadContent({ user }: { user: UserType | null | undefined }) {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="flex items-center gap-3">
             <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-            <span>Automatic replay parsing</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
             <span>K/D, HS%, Entry stats</span>
           </div>
           <div className="flex items-center gap-3">
@@ -225,7 +221,7 @@ function DownloadContent({ user }: { user: UserType | null | undefined }) {
           </div>
           <div className="flex items-center gap-3">
             <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-            <span>Operator performance</span>
+            <span>Operator picks</span>
           </div>
           <div className="flex items-center gap-3">
             <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
