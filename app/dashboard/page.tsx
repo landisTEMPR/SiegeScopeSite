@@ -18,18 +18,19 @@ function LockedState() {
         <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <Lock className="w-10 h-10 text-gray-400" />
         </div>
-        <h2 className="text-2xl font-bold mb-3">Downloads Locked</h2>
+        <h2 className="text-2xl font-bold mb-3">This tool is currently in private testing</h2>
         <p className="text-gray-600 mb-8">
-          Upgrade to Pro to download SiegeScope and start analyzing your matches.
+          We're preparing for a full release and are inviting early testers to join. Sign up and be among the first to try it out! We'll notify you as soon as your testing access is approved.
+
         </p>
         <Link
           href="/pricing"
           className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-4 rounded-xl hover:opacity-90 transition font-medium text-lg"
         >
-          Upgrade to Pro
+        [Join the Early Access List]
         </Link>
         <p className="text-sm text-gray-400 mt-4">
-          Starting at $15/month • Cancel anytime
+        You'll receive an email within a day or two with the next steps.
         </p>
       </div>
     </div>

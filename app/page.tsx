@@ -26,7 +26,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            SiegeScope automatically parses your R6 match replays and delivers instant stats—K/D, entry frags, operator performance, and more. Built for competitive players and coaches who need data, not hours of VOD review.
+            SiegeScope automatically parses your R6 match replays and delivers instant stats—K/D, entry frags, operator picks, and more. Built for competitive players and coaches who need data, not hours of VOD review.
           </p>
           
           <div className="flex items-center justify-center gap-4 flex-wrap">
@@ -56,13 +56,13 @@ export default function Home() {
 
           {/* Social proof */}
           <p className="mt-8 text-sm text-gray-500">
-            Trusted by pro players and competitive teams
+            
           </p>
         </div>
       </section>
 
       {/* Stats Bar */}
-      <section className="py-20 bg-gray-900 text-white px-4">
+      <section className="py-22 bg-gray-900 text-white px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
             <div className="text-3xl font-bold text-orange-500">10+</div>
